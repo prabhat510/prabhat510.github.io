@@ -1,7 +1,97 @@
-body{
-    background-color: black;
+*,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-h1{
-    color: white;
+
+body {
+    background-color: rgb(247, 247, 247);
+}
+
+h1 {
     text-align: center;
+}
+
+.img_profile {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+}
+
+nav {
+    display: flex;
+    /* justify-content: space-evenly; */
+    background-color: rgb(255, 255, 255);
+    gap: 50px;
+    padding: 5px;
+    height: 50px;
+    align-items: center;
+}
+
+.brand-name {
+    margin-left: 20px;
+    margin-right: 800px;
+}
+
+.nav-item {
+    font-size: 16px;
+    font-weight: 550;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: padding .3s ease;
+    position: relative;
+}
+
+.nav-item:not(:nth-child(1)):hover {
+    /* padding-bottom: 10px; */
+    border-bottom: 2px solid blue;
+}
+
+.home-section {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+}
+.my-image {
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+}
+.btn {
+    border-radius: 25px;
+    height: 40px;
+    width: 120px;
+    border: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-about-me {
+    margin-top: 20px;
+    background-color: rgb(37,6,173);
+    color: #ffffff;
+}
+.home-left > p {
+    line-height: 50px;
+    font-size: 32px;
+    font-weight: bolder;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+}
+.home-left > p:not(:last-child) {
+    color: rgb(0,32,87);
+}
+
+.contact-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.contact-icon > img {
+    height: 50px;
+    width: 50px;
 }
